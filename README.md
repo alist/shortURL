@@ -1,8 +1,6 @@
 shortURL
 ========
 
-view formatted readme at https://raw.github.com/alist/shortURL/master/README.md
-
 unit tested url-shortening framework operating with zappa js and mongo-db with mongoose
 reliably creates "shortURICodes" from "redirectURIs"
 
