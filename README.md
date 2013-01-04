@@ -18,7 +18,9 @@ setup:
 3) add the following before your catch-all (eg, 404) route:
   @get '/*', shorturl.unShortenRedir
 
-to use go to
+to use:
+coffee short.coffee, or supervisor short.coffee
+then go to
 localhost:3000/shorten/urltoshorten
 then aftwards, you're able to go to localhost:3000/code to redirect
 
