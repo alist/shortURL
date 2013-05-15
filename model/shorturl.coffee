@@ -37,6 +37,8 @@ exports.shorten = (shorteningURI, minLength, domain, shouldReuseCode, customCode
     current_date = (new Date()).valueOf().toString()
     random = Math.random().toString()
     hash = crypto.createHash('sha1').update(current_date + random + shorteningURI).digest('base64')
+    #assuming not all characters are forward slashes
+    hash = hash.replace(/\//g,'')
     if length > hash.length
       return hash
     else return hash.substr(0, length)
